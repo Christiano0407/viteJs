@@ -12,7 +12,11 @@ import viteLogo from '/vite.svg';
 import { setupCounter } from './counter.js';
 
 //** === Modules === */
-const modules = import.meta.glob('./modules/*.js');
+//const modules = import.meta.glob('./modules/*.js');
+const modules = {
+  './modules/moduleOne.js': () => import('./modules/moduleOne'),
+  './modules/moduleTwo.js': () => import('./modules/moduleTwo'),
+};
 //console.log(modules);
 for (const path in modules) {
   modules[path]().then((module) => {
