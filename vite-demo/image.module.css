@@ -1,0 +1,9 @@
+.img {
+  width: 300px;
+  height: 150px;
+  display: block;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

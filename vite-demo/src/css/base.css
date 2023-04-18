@@ -1,0 +1,19 @@
+/* === Mobile */
+@media (max-width: 640px) {
+  #idAppVite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* === Media Screen*/
+@media (min-width: 768px) {
+  body {
+    background-color: #111;
+  }
+  #idAppVite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
