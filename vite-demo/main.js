@@ -10,7 +10,8 @@ import data from './data.json';
 import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
 import { setupCounter } from './counter.js';
-
+//** === Typescript */
+import suma from './typescript/suma.ts';
 //** === Modules === */
 //const modules = import.meta.glob('./modules/*.js');
 const modules = {
@@ -23,6 +24,9 @@ for (const path in modules) {
     module.load();
   });
 }
+
+//** ==== ==== Typescript */
+console.log(`suma = ${suma(2, 3)}`);
 
 //** ==== === DOM Javascript === ==== */
 document.querySelector('#app').innerHTML = `
